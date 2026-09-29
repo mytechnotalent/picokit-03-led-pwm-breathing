@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-03-led-pwm-breathing",
+  "eyebrow": "PICOKIT // LESSON 03",
+  "title": "PICOKIT // LED PWM BREATHING",
+  "subtitle": "HARDWARE PWM BREATHING AND AUTHENTICATED HEARTBEAT",
+  "accent": "#C9FF47",
+  "dim": "#7C9E2C",
+  "white": "#ECF6E5",
+  "cyan": "#7FD8E0",
+  "bg": "#0E1104",
+  "bg_edge": "#040501",
+  "icon": "leaf",
+  "panel_status": "DUTY 250 / 1000  ·  RISING  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "LED",
+      "value": "BREATHE"
+    },
+    {
+      "label": "DUTY",
+      "value": "250"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-35 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00003  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] duty 250  rising  onboard blink",
+    "[+] ack sent  rssi -35  snr 9.0"
+  ],
+  "categories": [
+    "PWM",
+    "DUTY",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "STEP-01",
+      "label": "rise",
+      "value": "0-1000"
+    },
+    {
+      "tag": "STEP-02",
+      "label": "hold",
+      "value": "1000"
+    },
+    {
+      "tag": "STEP-03",
+      "label": "fall",
+      "value": "1000-0"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ PWM ]=="
+  ],
+  "layout": "terminal",
+  "stat": "BREATHE"
+}
